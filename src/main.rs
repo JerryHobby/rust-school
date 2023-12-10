@@ -22,6 +22,6 @@ fn main() {
     //iter_string();
     //iter_words();
     //disk_test();
-    //calc_shapes();
+    calc_shapes();
     resplit_main();
 }

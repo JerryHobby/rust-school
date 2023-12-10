@@ -18,7 +18,7 @@ jobs:
         run: make test
       - name: Build data engineering
         run: |
-         cd src/rust-data/engineering
+         cd src/rust-data-engineering
          make build
       - name: Data engineering tests
         run: make tests

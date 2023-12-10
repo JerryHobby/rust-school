@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<module type="EMPTY_MODULE" version="4">
+  <component name="NewModuleRootManager" inherit-compiler-output="true">
+    <exclude-output />
+    <content url="file://$MODULE_DIR$">
+      <sourceFolder url="file://$MODULE_DIR$/src" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/src/leetcode/src" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/src/leetcode/buddy_strings_859/src" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/src/leetcode/game_of_life_289/src" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/src/leetcode/hamming_weights_191/src" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/src/leetcode/minimum_one_bit_operations_1611/src" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/src/leetcode/src/array_strings_are_equal_1662/src" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/src/leetcode/array_strings_are_equal_1662/src" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/src/leetcode/number_of_1_bits_191/src" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/src/samples/resplit/src" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/src/log/src" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/src/log/tests" isTestSource="true" />
+      <sourceFolder url="file://$MODULE_DIR$/src/rust-data-engineering/src" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/tests" isTestSource="true" />
+      <excludeFolder url="file://$MODULE_DIR$/src/leetcode/target" />
+      <excludeFolder url="file://$MODULE_DIR$/target" />
+      <excludeFolder url="file://$MODULE_DIR$/src/leetcode/buddy_strings_859/target" />
+      <excludeFolder url="file://$MODULE_DIR$/src/leetcode/game_of_life_289/target" />
+      <excludeFolder url="file://$MODULE_DIR$/src/leetcode/hamming_weights_191/target" />
+      <excludeFolder url="file://$MODULE_DIR$/src/leetcode/minimum_one_bit_operations_1611/target" />
+      <excludeFolder url="file://$MODULE_DIR$/src/leetcode/src/array_strings_are_equal_1662/target" />
+      <excludeFolder url="file://$MODULE_DIR$/src/leetcode/array_strings_are_equal_1662/target" />
+      <excludeFolder url="file://$MODULE_DIR$/src/leetcode/number_of_1_bits_191/target" />
+      <excludeFolder url="file://$MODULE_DIR$/src/samples/resplit/target" />
+      <excludeFolder url="file://$MODULE_DIR$/src/log/target" />
+      <excludeFolder url="file://$MODULE_DIR$/src/rust-data-engineering/target" />
+    </content>
+    <orderEntry type="inheritedJdk" />
+    <orderEntry type="sourceFolder" forTests="false" />
+  </component>
+</module>

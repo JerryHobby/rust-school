@@ -1,0 +1,17 @@
+[package]
+name = "rust-native"
+version = "0.1.0"
+edition = "2021"
+
+# See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
+
+[dependencies]
+mysql = "*"
+dotenv = "0.15.0"
+dotenv_codegen = "0.15.0"
+serde = "1.0.193"
+serde_json = "1.0.108"
+resplit = { path = "src/samples/resplit" }
+log = { path = "src/log", features = [] }
+
+

@@ -1,13 +1,13 @@
-/// The `fruit_salad` module provides functionality for creating a random fruit salad.
+/// The `fruit_salad_vec` module provides functionality for creating a random fruit salad.
 ///
 /// # Examples
 ///
 /// Basic usage:
 ///
 /// ```
-/// use fruit_salad::fruit_salad;
+/// use fruit_salad_vec::fruit_salad_vec;
 ///
-/// fruit_salad();
+/// fruit_salad_vec();
 /// ```
 ///
 /// # Note
@@ -15,11 +15,10 @@
 /// This module uses the `rand` crate for randomizing the order of fruits.
 use rand::seq::SliceRandom;
 use rand::thread_rng;
-use std::collections::VecDeque;
 
 /// Prints a banner and calls the `random_salad` function to create a random fruit salad.
-pub fn fruit_salad() {
-    println!("####### FRUIT SALAD #######");
+pub fn fruit_salad_vec() {
+    println!("####### FRUIT SALAD VEC #######");
     random_salad(1);
     random_salad(4);
     random_salad(999);
@@ -27,7 +26,7 @@ pub fn fruit_salad() {
 
 /// Creates a random fruit salad.
 ///
-/// This function initializes a `VecDeque` with a list of fruits, shuffles them,
+/// This function initializes a `Vec` with a list of fruits, shuffles them,
 /// and then prints the first four fruits in the shuffled list.
 ///
 /// You can specify how many fruits are included in the salad.
@@ -35,34 +34,32 @@ pub fn fruit_salad() {
 /// # Examples
 ///
 /// ```
-/// use fruit_salad::random_salad;
+/// use fruit_salad_vec::random_salad;
 ///
 /// random_salad(salad_size: usize);
 /// ```
 
 fn random_salad(salad_size: usize) {
     let mut rng = thread_rng();
-    let mut fruits: VecDeque<&str> = VecDeque::new();
+    let mut fruits = vec![
+        "apple",
+        "banana",
+        "cherry",
+        "durian",
+        "elderberry",
+        "fig",
+        "grapefruit",
+        "honeydew",
+        "ice cream bean",
+    ];
 
-    fruits.push_back("apple");
-    fruits.push_back("banana");
-    fruits.push_back("cherry");
-    fruits.push_back("durian");
-    fruits.push_back("elderberry");
-    fruits.push_back("fig");
-    fruits.push_back("grapefruit");
-    fruits.push_back("honeydew");
-    fruits.push_back("ice cream bean");
-
-    let mut fruits: Vec<&str> = fruits.into_iter().collect();
+    fruits.push("jujube");
+    fruits.push("pomegranate");
+    fruits.push("jackfruit");
+    fruits.push("kiwi");
 
     fruits.shuffle(&mut rng);
 
-    let mut fruits: VecDeque<_> = fruits.into_iter().collect();
-
-    fruits.push_front("pomegranate");
-    fruits.push_back("jackfruit");
-    fruits.push_back("kiwi");
 
     let max_count = if fruits.len() <= salad_size {
         fruits.len()
@@ -70,7 +67,9 @@ fn random_salad(salad_size: usize) {
         salad_size
     };
 
-    for (i, fruit) in fruits.iter().enumerate() {
+    let salad = &fruits[0..max_count];
+
+    for (i, fruit) in salad.iter().enumerate() {
         if i == max_count {
             break;
         }

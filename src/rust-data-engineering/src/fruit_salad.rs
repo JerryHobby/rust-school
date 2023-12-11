@@ -91,7 +91,6 @@ mod tests {
     fn test_random_salad_0() {
         random_salad(0);
     }
-
     #[test]
     fn test_random_salad_5() {
         random_salad(5);

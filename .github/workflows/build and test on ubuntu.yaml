@@ -13,8 +13,15 @@ jobs:
         run: echo "${{ secrets.ENV_FILE }}" > .env
       - name: Build the application
         run: make build
-      - name: Upload test results
-        uses: actions/upload-artifact@v3
-        with:
-          name: test-results
-          path: test-results
+      - name: Run tests
+        run: make test
+      - name: Build data engineering
+        run: |
+          cd src/rust-data-engineering
+          make build
+      - name: Data engineering tests
+        run: |
+          cd src/rust-data-engineering
+          make test
+
+

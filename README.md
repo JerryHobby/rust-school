@@ -1,4 +1,4 @@
-[![Build and test](https://github.com/JerryHobby/rust-school/actions/workflows/build%20and%20test.yaml/badge.svg)](https://github.com/JerryHobby/rust-school/actions/workflows/build%20and%20test.yaml)
+[![Build and test on jerryhobby.com](https://github.com/JerryHobby/rust-school/actions/workflows/build%20and%20test%20on%20jerryhobby.com.yaml/badge.svg)](https://github.com/JerryHobby/rust-school/actions/workflows/build%20and%20test%20on%20jerryhobby.com.yaml)
 
 # rust-school
 
